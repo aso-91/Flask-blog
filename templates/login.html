@@ -1,21 +1,21 @@
 {% extends "template.html" %}
 {% block content %}
- <div class="login- wrapper">
-    <h2>Welcome to the Flask Blog!</h2>
-    <h3>Please log in to access your blog.</h3>
+<h2>Welcome to Flask IMERK blog</h2>
+<h3>Please enter your login credentials to access:</h3>
+<br>
+<div class="login-wrapper">
     <form action="" method="post">
-      <div>
+    <div>
         <label for="name">Username:</label>
-        <input type="text" id="username" name="username" value="{{
-            request.form.username }}">
-      </div>
-      <div>
-          <label for="mail">Password:</label>
-          <input type="password" id="password" name="password" value="{{request.form.password }}"/>
-      </div>
-      <div>
-          <button type="submit">Log In</button>
-      </div>
+        <input type="text" id="username" name="username" value="{{ request.form.username }}">
+    </div>
+    <div>
+        <label for="mail">Password:</label>
+        <input type="password" id="password" name="password" value="{{ request.form.password }}">
+    </div>
+    <div>
+    <button type="submit">Log IN</button>
+    </div>
     </form>
- </div>
+</div>
 {% endblock %}
